@@ -1,5 +1,6 @@
 ## 2018-09-26  v1.1
-* dir41.js, 
+* indexjs, integra dir41.js y querystring.js
+* dir41.js, show mp3 files in directory
 * querystring.js, route get querystring
 
 ## 2018-09-25  v1
