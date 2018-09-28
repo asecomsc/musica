@@ -7,22 +7,26 @@ var fs=require('fs');
 app.use(express.static('MUSICA'));
 
 function fromDir(startPath,filter){
-    var files=fs.readdirSync(startPath);
-    for(var i=0;i<files.length;i++){
+	var miArr =[];
+    var files = fs.readdirSync(startPath);
+    for(var i = 0; i<files.length; i++){
 		var filename=path.join(startPath,files[i]);
         var stat = fs.lstatSync(filename);
         if (stat.isDirectory()){
         }
         else if (filename.indexOf(filter)>=0) {
-            console.log(filename);
+            //console.log(filename);
+			miArr.push(filename);
         };		
     };
+	//console.log(JSON.stringify(miArr));
+	return JSON.stringify(miArr);
 };
 
 app.get('/ruta', function (req, res) {
    var miRuta = req.url.split("?")[1]
-   fromDir(miRuta,'.mp3');
-   res.end();
+   //fromDir(miRuta,'.mp3');
+   res.send(fromDir(miRuta,'.mp3'));
 })
 
 app.listen(3000);
