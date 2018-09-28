@@ -1,3 +1,6 @@
+## 2018-09-28
+* v1.3 url: localhost:3000/ruta?/MUSICA/HEAVY y node al final le quita del path /MUSICA
+
 ## 2018-09-18
 * v1.2 chrome receive in JSON
   
