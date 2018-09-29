@@ -1,19 +1,18 @@
 <html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$.get("http://localhost:3000/ruta?/MUSICA/HEAVY", function(data, status){
+					alert(data);
+				});
+			});
+		});
+  </script>
+</head>
+
 <body>
-
-<audio id="player" controls>
-  <source src="\heavy\orgyb1.mp3">
-</audio><br>
-
-<button onclick="myFunction()">Try it</button>
-
-<script>
-function myFunction() {
-    var x = document.getElementById("player")
-	x.src="http://localhost:3000/heavy/trailblazer.mp3"
-
-}
-</script>
-
+  <button>Click me</button>
 </body>
 </html>
