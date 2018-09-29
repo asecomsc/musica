@@ -1,6 +1,7 @@
 ## 2018-09-28
 * v1.3 url: localhost:3000/ruta?/MUSICA/HEAVY y node al final le quita del path /MUSICA
 * v1.4 jquery call api and returned json show it using js alert
+* v1.4.1 JSON.parse to convert json in js array THEN loop array and show every element with alert
 
 ## 2018-09-18
 * v1.2 chrome receive in JSON

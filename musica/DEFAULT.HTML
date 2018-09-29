@@ -5,7 +5,10 @@
 		$(document).ready(function(){
 			$("button").click(function(){
 				$.get("http://localhost:3000/ruta?/MUSICA/HEAVY", function(data, status){
-					alert(data);
+				    var elArr = JSON.parse(data);
+					for (var i = 0; i < elArr.length; i++) {
+						alert(elArr[i]);
+					}
 				});
 			});
 		});
