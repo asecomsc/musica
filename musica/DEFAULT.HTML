@@ -1,21 +1,22 @@
 <html>
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-		$(document).ready(function(){
-			$("button").click(function(){
-				$.get("http://localhost:3000/ruta?/MUSICA/HEAVY", function(data, status){
-				    var elArr = JSON.parse(data);
-					for (var i = 0; i < elArr.length; i++) {
-						alert(elArr[i]);
-					}
-				});
-			});
-		});
-  </script>
 </head>
 
 <body>
   <button>Click me</button>
+
+  <script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				  $.post("http://localhost:3000/ruta",{laRuta: "/MUSICA/HEAVY"},
+				  function(data, status){
+				    alert(data);
+					elArr = JSON.parse(data);
+				  });
+			});
+		});
+  </script>
+  
 </body>
 </html>

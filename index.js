@@ -1,10 +1,11 @@
 var express = require('express');
+var bodyParser = require("body-parser");
 var app = express();
-var querystring = require('querystring');
 var path = require('path');
 var fs=require('fs');
-
 app.use(express.static('MUSICA'));
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 function fromDir(startPath,filter){
 	var miArr =[];
@@ -21,9 +22,9 @@ function fromDir(startPath,filter){
 	return JSON.stringify(miArr);
 };
 
-app.get('/ruta', function (req, res) {
-   var miRuta = req.url.split("?")[1]
-   res.send(fromDir(miRuta,'.mp3'));
+app.post('/ruta', function (req, res) {
+   var miRuta = req.body.laRuta;
+   res.send(fromDir(miRuta,'.mp3'));   
 })
 
 app.listen(3000);

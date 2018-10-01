@@ -1,3 +1,6 @@
+## 2018-09-30
+* v1.4 cambié $.get por $.post, debido a que $.get usa cache y no siempre manda llamar a node. RECORDAR que para procesar post se tiene que agregar el middleware de body-parser.
+
 ## 2018-09-28
 * v1.3 url: localhost:3000/ruta?/MUSICA/HEAVY y node al final le quita del path /MUSICA
 * v1.4 jquery call api and returned json show it using js alert
