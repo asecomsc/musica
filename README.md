@@ -1,3 +1,6 @@
+## 2018-10-02
+* v1.5 boton1 show JSON ARRAY y boton2 shows every SONG
+
 ## 2018-09-30
 * v1.4 cambié $.get por $.post, debido a que $.get usa cache y no siempre manda llamar a node. RECORDAR que para procesar post se tiene que agregar el middleware de body-parser.
 

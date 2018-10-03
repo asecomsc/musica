@@ -1,22 +1,28 @@
 <html>
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-</head>
-
-<body>
-  <button>Click me</button>
-
   <script>
 		$(document).ready(function(){
-			$("button").click(function(){
+		var elArr = [];		
+		i = 0;
+			$("#miBoton").click(function(){
 				  $.post("http://localhost:3000/ruta",{laRuta: "/MUSICA/HEAVY"},
 				  function(data, status){
 				    alert(data);
 					elArr = JSON.parse(data);
 				  });
 			});
+			$("#miBot").click(function(){
+			    alert(elArr[i]);
+				i++;
+			});
 		});
-  </script>
-  
+		
+  </script>  
+</head>
+
+<body>
+  <input type="submit" id="miBoton" value="Json Array"><br><br>
+  <input type="submit" id="miBot" value="Songs Loop">
 </body>
 </html>
