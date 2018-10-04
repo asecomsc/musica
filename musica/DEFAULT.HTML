@@ -5,24 +5,34 @@
 		$(document).ready(function(){
 		var elArr = [];		
 		i = 0;
-			$("#miBoton").click(function(){
-				  $.post("http://localhost:3000/ruta",{laRuta: "/MUSICA/HEAVY"},
-				  function(data, status){
-				    alert(data);
-					elArr = JSON.parse(data);
-				  });
-			});
 			$("#miBot").click(function(){
-			    alert(elArr[i]);
+			     var x = document.getElementById("player");
+				 x.src=elArr[i];
+				 $("#parrafo").text(elArr[i]);
+				 //"http://localhost:3000/heavy/trailblazer.mp3"
 				i++;
 			});
+            $("li").click(function () {
+				  miLi = $(this).text();
+				  $.post("http://localhost:3000/ruta",{laRuta: miLi},
+				  function(data, status){
+					elArr = JSON.parse(data);
+				  });				
+            });			
 		});
+
 		
   </script>  
 </head>
 
 <body>
-  <input type="submit" id="miBoton" value="Json Array"><br><br>
-  <input type="submit" id="miBot" value="Songs Loop">
+<audio id="player" controls autoplay>
+</audio><br><br>
+<ul>
+    <li>/MUSICA/AAAA/01eje/heavy01</li>
+    <li>/MUSICA/HEAVY</li>	
+</ul>
+  <input type="submit" id="miBot" value="Songs Loop"><br><br>
+  <p id="parrafo">zxcv</p>
 </body>
 </html>

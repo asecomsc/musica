@@ -1,3 +1,6 @@
+## 2018-10-03
+* v1.6 li.click carga JSON ARRAY y con button SE ESCUCHA cada cancion
+
 ## 2018-10-02
 * v1.5 boton1 show JSON ARRAY y boton2 shows every SONG
 
