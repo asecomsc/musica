@@ -1,3 +1,6 @@
+## 2018-10-07
+* v1.6 YA SE PUEDE NAVEGAR EN LOS DIRECTORIOS, falta afinar varios detalles
+
 ## 2018-10-03
 * v1.6 li.click carga JSON ARRAY y con button SE ESCUCHA cada cancion
 

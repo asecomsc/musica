@@ -2,24 +2,55 @@
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
-		$(document).ready(function(){
-		var elArr = [];		
+	$(document).ready(function(){
+		var miObj = [];		
+		var x = document.getElementById("player");
 		i = 0;
+			      miLI('/MUSICA');
+		var text="";
 			$("#miBot").click(function(){
-			     var x = document.getElementById("player");
-				 x.src=elArr[i];
-				 $("#parrafo").text(elArr[i]);
+				 x.src = miObj.files[i];
+				 $("#parrafo").text(miObj.files[i]);
 				 //"http://localhost:3000/heavy/trailblazer.mp3"
-				i++;
+				 i++;
 			});
             $("li").click(function () {
+
 				  miLi = $(this).text();
 				  $.post("http://localhost:3000/ruta",{laRuta: miLi},
 				  function(data, status){
-					elArr = JSON.parse(data);
-				  });				
-            });			
-		});
+					miObj = JSON.parse(data);
+					$("ul").empty();
+					for (j = 0; j < miObj.dirs.length; j++) {
+					    //mitext = "<li>\\MUSICA" + miObj.dirs[j] + "</li>"
+				        text += "<li>" + miObj.dirs[j] + "</li>";
+						//mitext.replace(/\\/g,"/");
+					}
+					//alert(text);
+					$("ul").append(text);
+					//alert(JSON.stringify(miObj.dirs));
+				  });
+            });	
+		function miLI(param){
+				  $("ul").empty();											
+				  
+				  $.post("http://localhost:3000/ruta",{laRuta: param},
+				  function(data, status){
+					miObj = JSON.parse(data);
+					for (j = 0; j < miObj.dirs.length; j++) {
+				        var newLi = $("<li>" + miObj.dirs[j] + "</li>");
+						newLi.on('click', function() {
+							miLI($(this).text());
+						});
+
+						$("ul").append(newLi);
+					}
+					//
+										
+					//console.log(text);
+				  });
+		}
+	});
 
 		
   </script>  
@@ -29,8 +60,6 @@
 <audio id="player" controls autoplay>
 </audio><br><br>
 <ul>
-    <li>/MUSICA/AAAA/01eje/heavy01</li>
-    <li>/MUSICA/HEAVY</li>	
 </ul>
   <input type="submit" id="miBot" value="Songs Loop"><br><br>
   <p id="parrafo">zxcv</p>
