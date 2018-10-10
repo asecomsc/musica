@@ -6,62 +6,55 @@
 		var miObj = [];		
 		var x = document.getElementById("player");
 		i = 0;
-			      miLI('/MUSICA');
+		rutaAnt = '/MUSICA';
+        miLI(rutaAnt);
 		var text="";
 			$("#miBot").click(function(){
 				 x.src = miObj.files[i];
-				 $("#parrafo").text(miObj.files[i]);
+				 miLen = miObj.files.length;
+				 k = i + 1;
+				 $("#parrafo").text('['+ k +'/' + miLen + '] ' + miObj.files[i]);
 				 //"http://localhost:3000/heavy/trailblazer.mp3"
-				 i++;
+				 if (i < miLen - 1) {
+					i++;
+				 };
 			});
-            $("li").click(function () {
-
-				  miLi = $(this).text();
-				  $.post("http://localhost:3000/ruta",{laRuta: miLi},
-				  function(data, status){
-					miObj = JSON.parse(data);
-					$("ul").empty();
-					for (j = 0; j < miObj.dirs.length; j++) {
-					    //mitext = "<li>\\MUSICA" + miObj.dirs[j] + "</li>"
-				        text += "<li>" + miObj.dirs[j] + "</li>";
-						//mitext.replace(/\\/g,"/");
-					}
-					//alert(text);
-					$("ul").append(text);
-					//alert(JSON.stringify(miObj.dirs));
-				  });
-            });	
+			$("#miBot2").click(function(){
+				 i = 0;
+ 		         rutaAnt = rutaAnt.slice(0,rutaAnt.lastIndexOf('\\'));
+				 miLI(rutaAnt);
+			});			
+			$("#miBot3").click(function(){
+ 		         i = 0;
+				 miLI('/MUSICA');
+			});			
 		function miLI(param){
-				  $("ul").empty();											
-				  
-				  $.post("http://localhost:3000/ruta",{laRuta: param},
-				  function(data, status){
-					miObj = JSON.parse(data);
-					for (j = 0; j < miObj.dirs.length; j++) {
-				        var newLi = $("<li>" + miObj.dirs[j] + "</li>");
-						newLi.on('click', function() {
-							miLI($(this).text());
-						});
-
-						$("ul").append(newLi);
-					}
-					//
-										
-					//console.log(text);
-				  });
+		rutaAnt = param;
+		$("ul").empty();											
+		$.post("http://192.168.0.6:3000/ruta",{laRuta: param},
+		function(data, status){
+		   miObj = JSON.parse(data);
+		   for (j = 0; j < miObj.dirs.length; j++) {
+			   var newLi = $("<li>" + miObj.dirs[j] + "</li>");
+			    newLi.on('click', function() {
+					miLI($(this).text());
+				});
+				$("ul").append(newLi);
+			}
+		});
 		}
 	});
-
-		
   </script>  
 </head>
 
 <body>
 <audio id="player" controls autoplay>
-</audio><br><br>
-<ul>
-</ul>
-  <input type="submit" id="miBot" value="Songs Loop"><br><br>
-  <p id="parrafo">zxcv</p>
+</audio><br>  
+<p id="parrafo">zxcv</p>
+  <input type="submit" id="miBot" value=" > Next "><br><br>
+  <input type="submit" id="miBot2" value="  < Back  ">
+  <input type="submit" id="miBot3" value="  < HOME > "><br>
+<ul></ul>
+
 </body>
 </html>

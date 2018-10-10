@@ -8,7 +8,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 function fromDir(startPath,filter){
-	//console.log(startPath);
 	var miArr =[];
 	miAr2=[];
     var files = fs.readdirSync(startPath);
@@ -22,7 +21,6 @@ function fromDir(startPath,filter){
 			miArr.push(filename.slice(7));
         };		
     };
-	//console.log({files: miArr, dirs: miAr2});
 	return JSON.stringify({files: miArr, dirs: miAr2});
 };
 
