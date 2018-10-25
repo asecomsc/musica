@@ -8,26 +8,21 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 function fromDir(startPath,filter){
-	startPath = '/media/usb' + startPath;	
+	startPath = '/media/usb' + startPath;
 	var miArr =[];
-	miAr2=[];
     var files = fs.readdirSync(startPath);
     for(var i = 0; i < files.length; i++){
 		var filename=path.join(startPath,files[i]);
         var stat = fs.lstatSync(filename);
         if (stat.isDirectory()){
-			miAr2.push(filename.slice(10));
         }
         else if (filename.indexOf(filter)>=0) {
 			miArr.push(filename.slice(17));
+			//miArr.push(filename);
         };		
     };
-	return JSON.stringify({files: miArr, dirs: miAr2});
+	return JSON.stringify(miArr);
 };
-
-app.get('/', function (req, res) {
-   res.sendFile( __dirname + "/" + "DEFAULT.HTML");   
-});
 
 app.post('/ruta', function (req, res) {
    var miRuta = req.body.laRuta;

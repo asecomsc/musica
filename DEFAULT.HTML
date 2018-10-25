@@ -1,0 +1,64 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+	$(document).ready(function(){
+		var miObj = [];		
+		var x = document.getElementById("player");
+		x.addEventListener(("ended"), function() {
+			$("#miNext").click();
+			x.play();
+		});
+		i = 0;
+		rutaAnt = '/MUSICA';
+        miLI(rutaAnt);
+		var text="";
+			$("#miNext").click(function(){
+				 x.src = miObj.files[i];
+				 x.play();
+				 miLen = miObj.files.length;
+				 k = i + 1;
+				 $("#parrafo").text('['+ k +'/' + miLen + '] ' + miObj.files[i]);
+				 if (i < miLen - 1) {
+					i++;
+				 };
+			});
+			$("#miBack").click(function(){
+				 i = 0;
+ 		         rutaAnt = rutaAnt.slice(0,rutaAnt.lastIndexOf('\/'));
+				 miLI(rutaAnt);
+			});			
+			$("#miHome").click(function(){
+ 		         i = 0;
+				 miLI('/MUSICA');
+			});			
+		function miLI(param){
+		rutaAnt = param;
+		$("ul").empty();											
+		$.post("http://192.168.0.2:3001/ruta",{laRuta: param},
+		function(data, status){
+		   miObj = JSON.parse(data);
+		   for (j = 0; j < miObj.dirs.length; j++) {
+			   var newLi = $("<li>" + miObj.dirs[j] + "</li>");
+			    newLi.on('click', function() {
+					miLI($(this).text());
+				});
+				$("ul").append(newLi);
+			}
+		});
+		}
+	});
+  </script>  
+</head>
+
+<body>
+<audio id="player" controls>  //autoplay
+</audio><br>  
+<p id="parrafo">zxcv</p>
+  <input type="submit" id="miNext" value=" > Next "><br><br>
+  <input type="submit" id="miBack" value="  < Back  ">
+  <input type="submit" id="miHome" value="  < HOME > "><br>
+<ul></ul>
+
+</body>
+</html>

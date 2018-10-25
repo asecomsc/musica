@@ -1,3 +1,6 @@
+## 2018-10-25
+* 15 migracion RASPBERRY 
+
 ## 2018-10-08
 * v1.7 refactor ver 1.6, navegar-escuchar, http-192.168.0.6, back, 1/15 
 * v1.8 AUTOMATICAMENTE YA SE ESCUCHAN LAS SIGUIENTES CANCIONES

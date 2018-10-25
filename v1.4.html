@@ -1,0 +1,22 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <button>Click me</button>
+
+  <script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				  $.post("http://192.168.0.2:3001/ruta",{laRuta: "/MUSICA/HEAVY"},
+				  function(data, status){
+				    alert(data);
+					elArr = JSON.parse(data);
+				  });
+			});
+		});
+  </script>
+  
+</body>
+</html>
