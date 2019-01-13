@@ -1,3 +1,6 @@
+## 2019-01-10
+* 16 migracion RASPBERRY only needed files
+
 ## 2018-10-25
 * 15 migracion RASPBERRY 
 

@@ -1,0 +1,165 @@
+Error: ENOENT: no such file or directory, scandir '/media/usb/MUSICA'
+    at Error (native)
+    at Object.fs.readdirSync (fs.js:813:18)
+    at fromDir (/home/pi/musica/index.js:14:20)
+    at /home/pi/musica/index.js:34:13
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/pi/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/pi/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at /home/pi/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/pi/node_modules/express/lib/router/index.js:335:12)
+Error: ENOENT: no such file or directory, scandir '/media/usb/MUSICA'
+    at Error (native)
+    at Object.fs.readdirSync (fs.js:813:18)
+    at fromDir (/home/pi/musica/index.js:14:20)
+    at /home/pi/musica/index.js:34:13
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/pi/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/pi/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at /home/pi/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/pi/node_modules/express/lib/router/index.js:335:12)
+Error: ENOENT: no such file or directory, scandir '/media/usb/MUSICA'
+    at Error (native)
+    at Object.fs.readdirSync (fs.js:813:18)
+    at fromDir (/home/pi/musica/index.js:14:20)
+    at /home/pi/musica/index.js:34:13
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/pi/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/pi/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at /home/pi/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/pi/node_modules/express/lib/router/index.js:335:12)
+Error: ENOENT: no such file or directory, scandir '/media/usb/MUSICA'
+    at Error (native)
+    at Object.fs.readdirSync (fs.js:813:18)
+    at fromDir (/home/pi/musica/index.js:14:20)
+    at /home/pi/musica/index.js:34:13
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/pi/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/pi/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at /home/pi/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/pi/node_modules/express/lib/router/index.js:335:12)
+Error: ENOENT: no such file or directory, scandir '/media/usb/MUSICA'
+    at Error (native)
+    at Object.fs.readdirSync (fs.js:813:18)
+    at fromDir (/home/pi/musica/index.js:14:20)
+    at /home/pi/musica/index.js:34:13
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/pi/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/pi/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at /home/pi/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/pi/node_modules/express/lib/router/index.js:335:12)
+Error: ENOENT: no such file or directory, scandir '/media/usb/MUSICA'
+    at Error (native)
+    at Object.fs.readdirSync (fs.js:813:18)
+    at fromDir (/home/pi/musica/index.js:14:20)
+    at /home/pi/musica/index.js:34:13
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/pi/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/pi/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at /home/pi/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/pi/node_modules/express/lib/router/index.js:335:12)
+Error: ENOENT: no such file or directory, scandir '/media/usb/MUSICA'
+    at Error (native)
+    at Object.fs.readdirSync (fs.js:813:18)
+    at fromDir (/home/pi/musica/index.js:14:20)
+    at /home/pi/musica/index.js:34:13
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/pi/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/pi/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at /home/pi/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/pi/node_modules/express/lib/router/index.js:335:12)
+Error: ENOENT: no such file or directory, scandir '/media/usb/MUSICA'
+    at Error (native)
+    at Object.fs.readdirSync (fs.js:813:18)
+    at fromDir (/home/pi/musica/index.js:14:20)
+    at /home/pi/musica/index.js:34:13
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/pi/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/pi/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at /home/pi/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/pi/node_modules/express/lib/router/index.js:335:12)
+Error: ENOENT: no such file or directory, scandir '/media/usb/MUSICA'
+    at Error (native)
+    at Object.fs.readdirSync (fs.js:813:18)
+    at fromDir (/home/pi/musica/index.js:14:20)
+    at /home/pi/musica/index.js:34:13
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/pi/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/pi/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at /home/pi/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/pi/node_modules/express/lib/router/index.js:335:12)
+Error: ENOENT: no such file or directory, scandir '/media/usb/MUSICA'
+    at Error (native)
+    at Object.fs.readdirSync (fs.js:813:18)
+    at fromDir (/home/pi/musica/index.js:14:20)
+    at /home/pi/musica/index.js:34:13
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/pi/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/pi/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at /home/pi/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/pi/node_modules/express/lib/router/index.js:335:12)
+Error: ENOENT: no such file or directory, scandir '/media/usb/MUSICA'
+    at Error (native)
+    at Object.fs.readdirSync (fs.js:813:18)
+    at fromDir (/home/pi/musica/index.js:14:20)
+    at /home/pi/musica/index.js:34:13
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/pi/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/pi/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at /home/pi/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/pi/node_modules/express/lib/router/index.js:335:12)
+Error: ENOENT: no such file or directory, scandir '/media/usb/MUSICA'
+    at Error (native)
+    at Object.fs.readdirSync (fs.js:813:18)
+    at fromDir (/home/pi/musica/index.js:14:20)
+    at /home/pi/musica/index.js:34:13
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/pi/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/pi/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at /home/pi/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/pi/node_modules/express/lib/router/index.js:335:12)
+Error: ENOENT: no such file or directory, scandir '/media/usb/MUSICA'
+    at Error (native)
+    at Object.fs.readdirSync (fs.js:813:18)
+    at fromDir (/home/pi/musica/index.js:14:20)
+    at /home/pi/musica/index.js:34:13
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/pi/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/pi/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at /home/pi/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/pi/node_modules/express/lib/router/index.js:335:12)
+Error: ENOENT: no such file or directory, scandir '/media/usb/MUSICA'
+    at Error (native)
+    at Object.fs.readdirSync (fs.js:813:18)
+    at fromDir (/home/pi/musica/index.js:14:20)
+    at /home/pi/musica/index.js:34:13
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/pi/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/pi/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at /home/pi/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/pi/node_modules/express/lib/router/index.js:335:12)
+Error: ENOENT: no such file or directory, scandir '/media/usb/MUSICA'
+    at Error (native)
+    at Object.fs.readdirSync (fs.js:813:18)
+    at fromDir (/home/pi/musica/index.js:14:20)
+    at /home/pi/musica/index.js:34:13
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/pi/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/pi/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/pi/node_modules/express/lib/router/layer.js:95:5)
+    at /home/pi/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/pi/node_modules/express/lib/router/index.js:335:12)
