@@ -11,6 +11,7 @@
 		});
 		i = 0;
 		rutaAnt = '/MUSICA';
+		miBool = false;
         miLI(rutaAnt);
 		var text="";
 			$("#miNext").click(function(){
@@ -32,6 +33,10 @@
  		         i = 0;
 				 miLI('/MUSICA');
 			});			
+			$("#miPause").click(function(){
+				miBool = !(miBool);
+				if (miBool) x.pause(); else x.play();
+			});						
 		function miLI(param){
 		rutaAnt = param;
 		$("ul").empty();											
@@ -52,13 +57,19 @@
 </head>
 
 <body>
-<audio id="player" controls>  //autoplay
-</audio><br>  
-<p id="parrafo">zxcv</p>
-  <input type="submit" id="miNext" value=" > Next "><br><br>
-  <input type="submit" id="miBack" value="  < Back  ">
-  <input type="submit" id="miHome" value="  < HOME > "><br>
+<style>
+body {background-color: Black;}
+li {font-size: 50px;color: white;}
+input {font-size: 60px;background-color: yellow;}
+p {color: green;}
+</style>
+  <input type="submit" id="miHome" value=" HOME ">
+  <input type="submit" id="miPause" value=" Pause ">
+  <input type="submit" id="miBack" value=" <Back ">
+  <input type="submit" id="miNext" value=" Next> ">
+  <p id="parrafo">MUSICA</p>
 <ul></ul>
-
+<audio id="player" controls>  //autoplay
+</audio>
 </body>
 </html>
