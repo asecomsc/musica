@@ -36,7 +36,11 @@
 			$("#miPause").click(function(){
 				miBool = !(miBool);
 				if (miBool) x.pause(); else x.play();
+				alert(parseInt(x.currentTime));
 			});						
+			$("#miPosi").click(function(){
+				x.currentTime = 20;
+			});									
 		function miLI(param){
 		rutaAnt = param;
 		$("ul").empty();											
@@ -67,6 +71,7 @@ p {color: green;}
   <input type="submit" id="miPause" value=" Pause ">
   <input type="submit" id="miBack" value=" <Back ">
   <input type="submit" id="miNext" value=" Next> ">
+    <input type="submit" id="miPosi" value="Posi 20  ">
   <p id="parrafo">MUSICA</p>
 <ul></ul>
 <audio id="player" controls>  //autoplay

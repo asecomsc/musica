@@ -1,3 +1,9 @@
+## 2019-01-14
+* 18 <audio> on pause get actual position, goto position 20 second
+
+## 2019-13-10
+* 17 ui change
+
 ## 2019-01-10
 * 16 migracion RASPBERRY only needed files
 
